@@ -1,0 +1,100 @@
+﻿@model VirusName
+
+@{
+    ViewData["Title"] = "VirusName details";
+
+}
+
+<div class="row">
+
+    <div class="col-md-8 offset-2">
+        <div class="card mb-12">
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <div class="card-header text-white bg-info">
+                        <p class="card-text">
+                            <h5 class="card-title">
+                                @Model.Name
+
+                            </h5>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="@Model.ImageURL" width="100%" alt="@Model.Name">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text">@Model.Description</p>
+                        <p class="card-text">
+                            <b>Hospital: </b>
+                            <a asp-controller="Hospitals" asp-action="Details" asp-route-id="@Model.HospitalId">
+                                @Model.Hospital.Name
+                            </a>
+                        </p>
+                        <p class="card-text">
+                            <b>Company: </b>
+                            <a asp-controller="Companys" asp-action="Details" asp-route-id="@Model.CompanyId">
+                                @Model.Company.FullName
+                            </a>
+                        </p>
+                        <p class="card-text"><b>Category: </b>@Model.VirusNameCategory</p>
+                        <p class="card-text"><b>Start Date: </b>@Model.StartDate.ToString("dd MMM yy")</p>
+                        <p class="card-text"><b>End Date: </b>@Model.EndDate.ToString("dd MMM yy")</p>
+                        <p class="card-text ">
+                            <b>Status: </b>
+                            @if (DateTime.Now >= Model.StartDate && DateTime.Now <= Model.EndDate)
+                            {
+
+
+                                <span class="badga bg-success text-white">AVAILABLE</span>
+
+                            }
+                            else if (DateTime.Now > Model.EndDate)
+
+                            {
+                                <span class="badga bg-danger text-white">EXPIRED</span>
+
+                            }
+                            else
+                            {
+
+                                <span class="badga bg-primary text-white">UPCOMING</span>
+                            }
+                        </p>
+
+                        <p class="card-text">
+                            <b>Doctors: </b>
+                            <hr />
+                            <div class="row">
+                                @foreach (var doctor in Model.Doctors_VirusNames)
+                                {
+                                    <div class="flex-column text-center">
+                                        <img class="border-info rounded-circle" src="@doctor.Doctor.ProfilePictureURL" style="max-width: 150px"/>
+                                        <br/>
+                                        <a asp-controller="Doctors" asp-action="Details" asp-route-id="@doctor.DoctorId">@doctor.Doctor.FullName</a>
+                                    </div>
+                                }
+                            </div>
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card-footer ">
+                        <p class="card-text">
+                            <a class="btn btn-outline-primary float-right" asp-action="Index" >
+                                Back to List
+                            </a>
+                            <a class="btn btn-success text-white"><i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
