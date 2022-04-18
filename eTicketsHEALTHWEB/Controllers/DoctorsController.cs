@@ -12,7 +12,8 @@ namespace eTicketsHEALTHWEB.Controllers
     public class DoctorsController : Controller
     {
         private readonly IDoctorsService _service;
-        private int id;
+        public int id;
+
 
         public DoctorsController(IDoctorsService service)
         {

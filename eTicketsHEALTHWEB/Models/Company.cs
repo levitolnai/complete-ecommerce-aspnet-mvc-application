@@ -18,9 +18,9 @@ namespace eTicketsHEALTHWEB.Models
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Full Name must be between 3 and 50 chars")]
         public string FullName { get; set; }
 
-        [Display(Name = "Biography")]
-        [Required(ErrorMessage = "Biography is required")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Full Name must be between 3 and 50 chars")]
+        [Display(Name = "Profile")]
+        [Required(ErrorMessage = "Profile is required")]
+        [StringLength(500, MinimumLength = 3, ErrorMessage = "Full Name must be between 3 and 50 chars")]
         public string Bio { get; set; }
 
         //RelationShips

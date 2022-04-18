@@ -26,32 +26,32 @@ namespace eTicketsHEALTHWEB.Data
                     {
                         new Hospital()
                         {
-                            Name = "Hospital 1",
-                            Logo = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            Name = "North Hospital",
+                            Logo = "https://media.istockphoto.com/vectors/medical-concept-with-hospital-building-in-flat-style-vector-id1131216472?k=20&m=1131216472&s=612x612&w=0&h=809tQqEycyhLSS6E2nrAaP_3WAMzHVjHuPdYJwmQXZk=",
                             Description = "This is the description of the first hospital"
                         },
                         new Hospital()
                         {
-                            Name = "Hospital 2",
-                            Logo = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            Name = "West Hospital",
+                            Logo = "https://media.istockphoto.com/vectors/medical-concept-with-hospital-building-in-flat-style-vector-id1131216472?k=20&m=1131216472&s=612x612&w=0&h=809tQqEycyhLSS6E2nrAaP_3WAMzHVjHuPdYJwmQXZk=",
                             Description = "This is the description of the second hospital"
                         },
                         new Hospital()
                         {
-                            Name = "Hospital 3",
-                            Logo = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            Name = "South Hospital",
+                            Logo = "https://media.istockphoto.com/vectors/medical-concept-with-hospital-building-in-flat-style-vector-id1131216472?k=20&m=1131216472&s=612x612&w=0&h=809tQqEycyhLSS6E2nrAaP_3WAMzHVjHuPdYJwmQXZk=",
                             Description = "This is the description of the third hospital"
                         },
                         new Hospital()
                         {
-                            Name = "Hospital 4",
-                            Logo = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            Name = "East Hospital",
+                            Logo = "https://media.istockphoto.com/vectors/medical-concept-with-hospital-building-in-flat-style-vector-id1131216472?k=20&m=1131216472&s=612x612&w=0&h=809tQqEycyhLSS6E2nrAaP_3WAMzHVjHuPdYJwmQXZk=",
                             Description = "This is the description of the fourth hospital"
                         },
                         new Hospital()
                         {
-                            Name = "Hospital 5",
-                            Logo = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            Name = "North-East Hospital",
+                            Logo = "https://media.istockphoto.com/vectors/medical-concept-with-hospital-building-in-flat-style-vector-id1131216472?k=20&m=1131216472&s=612x612&w=0&h=809tQqEycyhLSS6E2nrAaP_3WAMzHVjHuPdYJwmQXZk=",
                             Description = "This is the description of the fifth hospital"
                         },
                     });
@@ -64,34 +64,34 @@ namespace eTicketsHEALTHWEB.Data
                     {
                         new Doctor()
                         {
-                            FullName = "Doctor 1",
+                            FullName = "Doctor Black",
                             Bio = "This is the Bio of the first doctor",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            ProfilePictureURL = "https://en.pimg.jp/055/021/026/1/55021026.jpg"
 
                         },
                         new Doctor()
                         {
-                            FullName = "Doctor 2",
+                            FullName = "Doctor Brown",
                             Bio = "This is the Bio of the second doctor",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            ProfilePictureURL = "https://en.pimg.jp/004/472/040/1/4472040.jpg"
                         },
                         new Doctor()
                         {
-                           FullName = "Doctor 3",
+                           FullName = "Doctor White",
                             Bio = "This is the Bio of the third doctor",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            ProfilePictureURL = "https://en.pimg.jp/002/386/012/1/2386012.jpg"
                         },
                         new Doctor()
                         {
-                            FullName = "Doctor 4",
+                            FullName = "Doctor Red",
                             Bio = "This is the Bio of the fourth doctor",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            ProfilePictureURL = "https://png.pngtree.com/png-clipart/20190611/original/pngtree-vector-hand-painted-doctor-png-image_3236614.jpg"
                         },
                         new Doctor()
                         {
-                            FullName = "Doctor 5",
+                            FullName = "Doctor Green",
                             Bio = "This is the Bio of the fifth doctor",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            ProfilePictureURL = "https://png.pngtree.com/png-clipart/20190604/original/pngtree-doctors-png-image_979759.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -103,34 +103,34 @@ namespace eTicketsHEALTHWEB.Data
                     {
                         new Company()
                         {
-                            FullName = "Company 1",
-                            Bio = "This is the Bio of the first company",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                            FullName = "Alpha Ltd.",
+                            Bio = "This is the Profile of the first company",
+                            ProfilePictureURL = "https://c8.alamy.com/comp/MW10CY/insurance-concept-painted-red-family-and-palm-icon-on-digital-data-paper-background-with-hand-drawn-insurance-icons-MW10CY.jpg"
 
                         },
                         new Company()
                         {
-                             FullName = "Company 2",
-                            Bio = "This is the Bio of the second company",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                             FullName = "Beta Inc.",
+                            Bio = "This is the Profile of the second company",
+                            ProfilePictureURL = "https://thumbs.dreamstime.com/z/vector-senior-young-people-covered-health-insurance-being-assisted-medical-staff-190011905.jpg"
                         },
                         new Company()
                         {
-                             FullName = "Company 3",
-                            Bio = "This is the Bio of the third company",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                             FullName = "Gamma Ltd.",
+                            Bio = "This is the Profile of the third company",
+                            ProfilePictureURL = "https://image.shutterstock.com/image-vector/home-shield-logo-260nw-601529891.jpg"
                         },
                         new Company()
                         {
-                             FullName = "Company 4",
-                            Bio = "This is the Bio of the fourth company",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                             FullName = "Delta Inc.",
+                            Bio = "This is the Profile of the fourth company",
+                            ProfilePictureURL = "https://image.shutterstock.com/image-vector/home-heart-shape-logo-icon-260nw-1933492772.jpg"
                         },
                         new Company()
                         {
-                             FullName = "Company 5",
-                            Bio = "This is the Bio of the fifth company",
-                            ProfilePictureURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076"
+                             FullName = "Omega Inc.",
+                            Bio = "This is the Profile of the fifth company",
+                            ProfilePictureURL = "https://i.pinimg.com/originals/49/37/ee/4937ee3b369f48e76c4843c407e057c5.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -142,10 +142,10 @@ namespace eTicketsHEALTHWEB.Data
                     {
                         new VirusName()
                         {
-                            Name = "Fast Covid Test",
+                            Name = "Two Vaccination with Pfeizer to prevent Covid",
                             Description = "This is the Fast Covid Test description",
                             Price = 39.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://www.bu.edu/files/2022/08/v4-21-1011-VAC-017.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(10),
                             HospitalId = 3,
@@ -154,10 +154,10 @@ namespace eTicketsHEALTHWEB.Data
                         },
                         new VirusName()
                         {
-                            Name = "Thorough Covid Test without antibodies investigation",
+                            Name = "Janssen, All in One Vaccination",
                             Description = "This is the Thorough Covid Test without antibodies investigation description",
                             Price = 29.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://www.bu.edu/files/2022/08/v4-21-1011-VAC-017.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(3),
                             HospitalId = 1,
@@ -169,7 +169,7 @@ namespace eTicketsHEALTHWEB.Data
                             Name = "Thorough Covid Test with antibodies investigation",
                             Description = "This is the Thorough Covid Test with antibodies investigation description",
                             Price = 39.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://img.virusmaszk.hu/HY-tyK5S/s-b4:BgigsNyBrlTd5_lkI_WS4yr1oakGCKCw55/w:560_h:840_c:pad_bg:56a7c5_q:93/i/33927406.png.webp",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(7),
                             HospitalId = 4,
@@ -178,10 +178,10 @@ namespace eTicketsHEALTHWEB.Data
                         },
                         new VirusName()
                         {
-                            Name = "Two Vaccination with Pfeizer to prevent Covid",
+                            Name = "Fast Covid Test",
                             Description = "This is the Two Vaccination with Pfeizer description",
                             Price = 39.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://img.virusmaszk.hu/HY-tyK5S/s-b4:BgigsNyBrlTd5_lkI_WS4yr1oakGCKCw55/w:560_h:840_c:pad_bg:56a7c5_q:93/i/33927406.png.webp",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-5),
                             HospitalId = 1,
@@ -190,10 +190,10 @@ namespace eTicketsHEALTHWEB.Data
                         },
                         new VirusName()
                         {
-                            Name = "Janssen, All in One Vaccination",
-                            Description = "This is the Scoob movie description",
+                            Name = "Thorough Covid Test/ no antibodies investigation",
+                            Description = "This is description",
                             Price = 39.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://img.virusmaszk.hu/HY-tyK5S/s-b4:BgigsNyBrlTd5_lkI_WS4yr1oakGCKCw55/w:560_h:840_c:pad_bg:56a7c5_q:93/i/33927406.png.webp",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
                             HospitalId = 1,
@@ -203,9 +203,9 @@ namespace eTicketsHEALTHWEB.Data
                         new VirusName()
                         {
                             Name = "Janssen, All in One Vaccination for Covid-Omicron",
-                            Description = "This is the Cold Soles movie description",
+                            Description = "This is description",
                             Price = 39.50,
-                            ImageURL = "https://posterstore-group.imgix.net/10-83167.jpg?auto=compress%2Cformat&h=550&w=515&s=8618d73b46ee6b8bf01b0d7c21cca076",
+                            ImageURL = "https://www.bu.edu/files/2022/08/v4-21-1011-VAC-017.jpg",
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             HospitalId = 1,

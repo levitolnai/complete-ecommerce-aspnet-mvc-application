@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eTicketsHEALTHWEB.Data;
 
 namespace eTicketsHEALTHWEB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220418093816_Order_Added")]
+    partial class Order_Added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,29 +157,6 @@ namespace eTicketsHEALTHWEB.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("eTicketsHEALTHWEB.Models.ShoppingCartItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ShoppingCartId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("VirusNameId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("VirusNameId");
-
-                    b.ToTable("ShoppingCartItems");
-                });
-
             modelBuilder.Entity("eTicketsHEALTHWEB.Models.VirusName", b =>
                 {
                     b.Property<int>("Id")
@@ -255,15 +234,6 @@ namespace eTicketsHEALTHWEB.Migrations
                         .IsRequired();
 
                     b.Navigation("Order");
-
-                    b.Navigation("VirusName");
-                });
-
-            modelBuilder.Entity("eTicketsHEALTHWEB.Models.ShoppingCartItem", b =>
-                {
-                    b.HasOne("eTicketsHEALTHWEB.Models.VirusName", "VirusName")
-                        .WithMany()
-                        .HasForeignKey("VirusNameId");
 
                     b.Navigation("VirusName");
                 });
